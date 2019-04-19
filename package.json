@@ -1,0 +1,24 @@
+{
+  "name": "typescript-todo-app",
+  "version": "1.0.0",
+  "description": "Experimental app to explore typescript and the benefits it can have on a project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faycel-Arab/typescript-todo-app.git"
+  },
+  "keywords": [
+    "typescript",
+    "todo-app",
+    "webpack"
+  ],
+  "author": "Faycel ARAB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faycel-Arab/typescript-todo-app/issues"
+  },
+  "homepage": "https://github.com/Faycel-Arab/typescript-todo-app#readme"
+}
