@@ -2,9 +2,11 @@
   "name": "typescript-todo-app",
   "version": "1.0.0",
   "description": "Experimental app to explore typescript and the benefits it can have on a project",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start-dev-server": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/Faycel-Arab/typescript-todo-app/issues"
   },
-  "homepage": "https://github.com/Faycel-Arab/typescript-todo-app#readme"
+  "homepage": "https://github.com/Faycel-Arab/typescript-todo-app#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
+  }
 }
