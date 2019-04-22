@@ -1,10 +1,5 @@
-class Greeter {
-  constructor(public greeting: string) { }
-  greet(): any {
-      return `<h1> ${this.greeting} </h1>`;
-  }
-};
+import { App } from './app';
 
-const greeter = new Greeter("Todo App in Typescript");
+const app = new App();
 
-document.body.innerHTML = greeter.greet();
+console.log(app.createNewStore('Faycel').stores());
