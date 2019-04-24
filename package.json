@@ -4,7 +4,7 @@
   "description": "Experimental app to explore typescript and the benefits it can have on a project",
   "private": true,
   "scripts": {
-    "test": "test",
+    "test": "webpack --config webpack.test.js; jasmine --random=false",
     "start-dev-server": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
@@ -24,8 +24,10 @@
   },
   "homepage": "https://github.com/Faycel-Arab/typescript-todo-app#readme",
   "devDependencies": {
+    "@types/jasmine": "^3.3.12",
     "clean-webpack-plugin": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "jasmine": "^3.4.0",
     "ts-loader": "^5.3.3",
     "tslint": "^5.16.0",
     "tslint-config-airbnb": "^5.11.1",

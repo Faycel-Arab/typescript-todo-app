@@ -3,5 +3,5 @@
     "extends": "tslint-config-airbnb",
     "jsRules": {},
     "rules": {},
-    "rulesDirectory": []
+    "rulesDirectory": ["src"]
 }

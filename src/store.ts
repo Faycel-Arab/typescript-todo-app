@@ -5,7 +5,7 @@ export enum TodoState {
 }
 
 /* describe a todo interface */
-interface Todo {
+export interface Todo {
   content: string;
   state: TodoState;
 }
@@ -61,8 +61,8 @@ export class Store{
   }
 
   /* check if an item/todo exists in the store*/
-  private itemExist(id: number): Boolean {
-    return this.todos[id].state !== TodoState.deleted;
+  private itemExist(index: number): Boolean {
+    return this.todos[index].state !== TodoState.deleted;
   }
 
   /* add an item/todo to the store */
@@ -75,9 +75,9 @@ export class Store{
   }
 
   /* remove an item/todo from the store */
-  public removeItem(id: number): Store {
-    if (this.itemExist(id)) {
-      this.todos[id].state = TodoState.deleted;
+  public removeItem(index: number): Store {
+    if (this.itemExist(index)) {
+      this.todos[index].state = TodoState.deleted;
     }
     return this;
   }
